@@ -1,0 +1,131 @@
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.clockbox {
+    width: 70%;
+}
+
+#clock {
+    width: 100%;
+}
+
+.main-text {
+    text-align: center;
+    padding: 20px 50px 20px 20px;
+    margin-right: 50px;
+    color: wheat;
+}
+
+.main-text span {
+    font-style: oblique;
+}
+
+/*svg {
+    transform: translate(100px, 100px);
+}*/
+
+.circle {
+    fill: none;
+    stroke: #79d9fc;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-marks {
+    transform: translate(300px, 300px);
+    stroke: #f7ea5c;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+}
+
+.hands {
+    transform: translate(300px, 300px) rotate(-90deg) ;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+}
+
+.hours {
+    stroke-width: 15;
+    stroke: #f7ea5c;
+}
+
+.minutes {
+    stroke-width: 10;
+    stroke: #f7ea5c;
+    /*stroke: #a1faff;*/
+}
+
+.seconds {
+    stroke-width: 4;
+    stroke: #ff4f64;
+}
+
+.sig-text {
+    transform: translate(-170px, -25px) rotate(90deg);
+    font-family: sans-serif;
+    font-style: italic;
+    fill: #79d9fc;
+    stroke: none;
+}
+
+.mid-circle {
+    fill: #ff4f64;
+}
+
+.hour-marks > line:nth-child(1) {
+    transform: translate(181.86px, 105px) rotate(30deg);
+}
+
+.hour-marks > line:nth-child(2) {
+    transform: translate(105px,181.86px) rotate(60deg);
+}
+
+.hour-marks > line:nth-child(3) {
+    transform: translate(0px,210px) rotate(90deg);
+    stroke-width: 9;
+}
+
+.hour-marks > line:nth-child(4) {
+    transform: translate(-105px, 181.86px) rotate(120deg);
+}
+
+.hour-marks > line:nth-child(5) {
+    transform: translate(-181.86px, 105px) rotate(150deg);
+}
+
+.hour-marks > line:nth-child(6) {
+    transform: translate(-210px,0px) rotate(180deg);
+    stroke-width: 9;
+}
+
+.hour-marks > line:nth-child(7) {
+    transform: translate(-181.86px, -105px) rotate(210deg);
+}
+
+.hour-marks > line:nth-child(8) {
+    transform: translate(-105px,-181.86px) rotate(240deg);
+}
+
+.hour-marks > line:nth-child(9) {
+    transform: translate(0px,-210px) rotate(270deg);
+    stroke-width: 9;
+}
+
+.hour-marks > line:nth-child(10) {
+    transform: translate(105px,-181.86px) rotate(300deg);
+}
+
+.hour-marks > line:nth-child(11) {
+    transform: translate(181.86px, -105px) rotate(330deg);
+}
+
+.hour-marks > line:nth-child(12) {
+    transform: translate(210px,0px) rotate(360deg);
+    stroke-width: 9;
+}
